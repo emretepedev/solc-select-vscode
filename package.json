@@ -1,0 +1,50 @@
+{
+  "name": "solc-select-vscode",
+	"displayName": "solc-select vscode",
+	"description": "Vscode plugin that use solc-select to switch solc version according to .svmrc file.",
+	"version": "1.0.0",
+	"license": "MIT",
+	"private": false,
+	"author": {
+    "name": "emretepedev"
+  },
+	"publisher": "emretepedev",
+	"repository": {
+    "url": "https://github.com/emretepedev/solc-select-vscode.git",
+    "type": "git"
+  },
+	"engines": {
+		"vscode": "^1.65.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"workspaceContains:.svmrc"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": []
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.65.0",
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.1.0",
+		"@types/node": "14.x",
+		"@typescript-eslint/eslint-plugin": "^5.12.1",
+		"@typescript-eslint/parser": "^5.12.1",
+		"eslint": "^8.9.0",
+		"glob": "^7.2.0",
+		"mocha": "^9.2.1",
+		"typescript": "^4.5.5",
+		"@vscode/test-electron": "^2.1.2"
+	}
+}
