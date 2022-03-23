@@ -1,6 +1,6 @@
 # solc-select-vscode README
 
-This is the README for your extension "solc-select-vscode". After writing up a brief description, we recommend including the following sections.
+Vscode plugin that use solc-select to switch solc version according to .svmrc file.
 
 ## Features
 
