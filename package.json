@@ -9,10 +9,7 @@
     "name": "emretepedev"
   },
 	"publisher": "emretepedev",
-	"repository": {
-    "url": "https://github.com/emretepedev/solc-select-vscode.git",
-    "type": "git"
-  },
+	"repository": "https://github.com/emretepedev/solc-select-vscode.git",
 	"engines": {
 		"vscode": "^1.65.0"
 	},

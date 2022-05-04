@@ -8,7 +8,7 @@ function use(x: vscode.Terminal) {
     x.sendText(`solc-select use $(Get-Content .svmrc).replace( 'v', '' )`);
   }
   else {
-    x.sendText('solc-select use $(cat .svmrc)');
+    x.sendText('pip freeze | grep solc-select >/dev/null 2>&1 && solc-select use $(cat .svmrc)');
   }
 }
 
