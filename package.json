@@ -2,7 +2,7 @@
   "name": "solc-select-vscode",
 	"displayName": "solc-select vscode",
 	"description": "Vscode plugin that use solc-select to switch solc version according to .svmrc file.",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"license": "MIT",
 	"private": false,
 	"author": {
@@ -10,6 +10,7 @@
   },
 	"publisher": "emretepedev",
 	"repository": "https://github.com/emretepedev/solc-select-vscode.git",
+	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "^1.65.0"
 	},
@@ -35,7 +36,7 @@
 		"@types/vscode": "^1.65.0",
 		"@types/glob": "^7.2.0",
 		"@types/mocha": "^9.1.0",
-		"@types/node": "14.x",
+		"@types/node": "^16.0.0",
 		"@typescript-eslint/eslint-plugin": "^5.12.1",
 		"@typescript-eslint/parser": "^5.12.1",
 		"eslint": "^8.9.0",
