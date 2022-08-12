@@ -5,7 +5,7 @@ import * as vscode from 'vscode';
 
 function use(x: vscode.Terminal) {
   if (process.platform === "win32") {
-    x.sendText(`solc-select use $(Get-Content .svmrc).replace( 'v', '' )`);
+    x.sendText(`solc-select use $(Get-Content .svmrc)`);
   }
   else {
     x.sendText('pip freeze | grep solc-select >/dev/null 2>&1 && solc-select use $(cat .svmrc)');
